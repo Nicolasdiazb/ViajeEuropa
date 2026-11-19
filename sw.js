@@ -1,4 +1,4 @@
-const CACHE = "europe-2026-v2";
+const CACHE = "europe-2026-v3";
 
 self.addEventListener("install", (event) => {
   self.skipWaiting();
