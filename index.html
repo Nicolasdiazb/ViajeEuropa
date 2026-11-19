@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Presupuesto de comida del viaje familiar de noviembre de 2026 a París, Chamonix y Ámsterdam.">
+  <meta name="theme-color" content="#f3f7f4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101614" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Gastos">
+  <title>Gastos · Europa 2026</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <div class="stripe">
+      <span>Europa 2026</span>
+      <span>20–30 nov</span>
+    </div>
+    <main id="main">
+      <p class="loading">Abriendo el cuaderno…</p>
+    </main>
+    <nav class="tabbar" aria-label="Primary">
+      <a href="#/" data-tab="today">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3.5v4M16 3.5v4M4 10h16"/></svg>
+        <span>Hoy</span>
+      </a>
+      <a href="#/days" data-tab="days">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h14"/></svg>
+        <span>Días</span>
+      </a>
+      <a href="#/add" data-tab="add">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        <span>Anotar</span>
+      </a>
+      <a href="#/more" data-tab="more">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12h.01M12 12h.01M18 12h.01"/></svg>
+        <span>Más</span>
+      </a>
+    </nav>
+    <div id="toast" role="status" aria-live="polite"></div>
+  </div>
+  <noscript><p>Este cuaderno necesita JavaScript.</p></noscript>
+  <script src="app.js"></script>
+</body>
+</html>
